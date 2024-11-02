@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -19,16 +20,23 @@
             padding: 10px;
         }
 
-        thead{
+        thead, tfoot{
             background-color: grey;
             color: white;
+        
         }
 
-        tfoot{
-            background-color: grey;
-            color: white;
-        }
+        thead > tr > th{
+            position: sticky;
+            top:-1;
 
+        }
+        
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+    
         td.num{
             text-align: right;
         }
@@ -54,7 +62,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -174,5 +182,9 @@
 
         </tfoot>
     </table>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae officiis aliquam labore ipsum laborum, vitae sed voluptatum vero, delectus aperiam dolorum adipisci reiciendis, fugit molestiae voluptas magnam assumenda est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor laborum, sit optio ex ea aut repudiandae error. Voluptates modi molestias ipsum nostrum sed quod mollitia a eligendi porro. Quam, et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius harum quidem dolorem enim autem inventore minima, hic eum voluptas, eligendi tempora recusandae natus. Reprehenderit optio neque vel omnis pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab officia et delectus earum sequi quibusdam nobis. Repellendus aliquam voluptatum alias, repellat amet fuga, placeat maiores, veniam deserunt voluptas doloribus!
+
+</p>
 </body>
 </html>
